@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">串口调试助手</string>
+    <string name="select_serial_port">串口设备:</string>
+    <string name="select_baud_rate">波特率</string>
+    <string name="open_serial_port">打开串口</string>
+    <string name="close_serial_port">关闭串口</string>
+    <string name="no_serial_device">找不到串口设备</string>
+    <string name="send_data">发送命令</string>
+    <string name="input_data">输入命令</string>
+    <string name="load_cmd_list">加载命令列表</string>
+  
+</resources>

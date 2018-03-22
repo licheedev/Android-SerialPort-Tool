@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_toast_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/horizontal_margin"
+        android:paddingLeft="@dimen/default_text_size"
+        android:paddingRight="@dimen/default_text_size"
+        android:paddingTop="@dimen/horizontal_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_text_size"
+        tools:text="网络未连接" />
+
+</LinearLayout>

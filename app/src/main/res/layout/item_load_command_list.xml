@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_8dp">
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        tools:text="abadsfadsfdasfasdjfljadlsfjlasjdflja;lsdjf;ljasdl;fj;lasdjf;lajsd;fljasdfa" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_height">@dimen/normal_48dp</dimen>
+
+    <dimen name="default_button_height">@dimen/normal_120dp</dimen>
+    <dimen name="horizontal_margin">@dimen/normal_16dp</dimen>
+    <dimen name="small_button_height">@dimen/normal_48dp</dimen>
+    <dimen name="default_text_size">@dimen/normal_36dp</dimen>
+    <dimen name="small_text_size">@dimen/normal_30dp</dimen>
+    <dimen name="edit_text_size">@dimen/normal_40dp</dimen>
+    
+</resources>

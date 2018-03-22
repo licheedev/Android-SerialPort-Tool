@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.licheedev.serialtool"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation "com.android.support:appcompat-v7:${supportVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.3'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.github.licheedev.SomeLibrary:myutils:0.02'
+    
+    // 串口
+    implementation 'com.github.licheedev.Android-SerialPort-API:serialport:1.0.1'
+
+    //rx
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    // 选文件的
+    implementation 'ru.bartwell:exfilepicker:2.1'
+}
