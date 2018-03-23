@@ -35,7 +35,7 @@ public class SerialReadThread extends Thread {
                 break;
             }
             try {
-                
+
                 int available = mInputStream.available();
 
                 if (available > 0) {
@@ -46,18 +46,17 @@ public class SerialReadThread extends Thread {
                 } else {
                     SystemClock.sleep(1);
                 }
-                
             } catch (IOException e) {
                 LogPlus.e("读取数据失败", e);
             }
             Thread.yield();
         }
-        
+
         LogPlus.e("结束读进程");
     }
 
     /**
-     * 处理获取到的数据，解决粘包
+     * 处理获取到的数据，解决粘包、分包等
      *
      * @param received
      * @param size

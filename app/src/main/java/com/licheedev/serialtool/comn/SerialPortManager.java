@@ -162,7 +162,7 @@ public class SerialPortManager {
         rxSendData(bytes).subscribeOn(mSendScheduler).subscribe(new Observer<Object>() {
             @Override
             public void onSubscribe(Disposable d) {
-
+                
             }
 
             @Override

@@ -60,6 +60,12 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemSele
     }
 
     @Override
+    protected void onDestroy() {
+        SerialPortManager.instance().close();
+        super.onDestroy();
+    }
+
+    @Override
     protected boolean hasActionBar() {
         return false;
     }
