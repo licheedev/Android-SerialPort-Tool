@@ -44,25 +44,26 @@ public class SerialReadThread extends Thread {
                         onDataReceive(received, size);
                     }
                 } else {
+                    // 暂停一点时间，免得一直循环造成CPU占用率过高
                     SystemClock.sleep(1);
                 }
             } catch (IOException e) {
                 LogPlus.e("读取数据失败", e);
             }
-            Thread.yield();
+            //Thread.yield();
         }
 
         LogPlus.e("结束读进程");
     }
 
     /**
-     * 处理获取到的数据，解决粘包、分包等
+     * 处理获取到的数据
      *
      * @param received
      * @param size
      */
     private void onDataReceive(byte[] received, int size) {
-        // TODO: 2018/3/22 
+        // TODO: 2018/3/22 解决粘包、分包等
         String hexStr = ByteUtil.bytes2HexStr(received, 0, size);
         LogManager.instance().post(new RecvMessage(hexStr));
     }
