@@ -2,10 +2,10 @@ package com.licheedev.serialtool.comn;
 
 import android.os.HandlerThread;
 import android.serialport.SerialPort;
+import com.licheedev.hwutils.ByteUtil;
 import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.comn.message.SendMessage;
-import com.licheedev.serialtool.util.ByteUtil;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -68,7 +68,7 @@ public class SerialPortManager {
         try {
             File device = new File(devicePath);
             int baurate = Integer.parseInt(baudrateString);
-            mSerialPort = new SerialPort(device, baurate, 0);
+            mSerialPort = new SerialPort(device, baurate);
 
             mReadThread = new SerialReadThread(mSerialPort.getInputStream());
             mReadThread.start();

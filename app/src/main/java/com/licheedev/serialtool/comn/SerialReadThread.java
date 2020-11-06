@@ -1,10 +1,10 @@
 package com.licheedev.serialtool.comn;
 
 import android.os.SystemClock;
+import com.licheedev.hwutils.ByteUtil;
 import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.comn.message.RecvMessage;
-import com.licheedev.serialtool.util.ByteUtil;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;

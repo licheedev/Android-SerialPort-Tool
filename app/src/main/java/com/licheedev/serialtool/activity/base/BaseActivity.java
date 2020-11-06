@@ -1,9 +1,9 @@
 package com.licheedev.serialtool.activity.base;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import butterknife.ButterKnife;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.fragment.LogFragment;
